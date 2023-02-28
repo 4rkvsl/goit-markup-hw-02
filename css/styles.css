@@ -1,11 +1,25 @@
 :root {
   --accent-color: #404bbf;
+  --main-color: #2e2f42;
+  --secondary-color: #434455;
+  --third-color: #ffffff;
+  --fourth-color: #f4f4fd;
+  --background-secondary-color: #f4f4fd;
+  --footer-text-color: #e7e9fc;
+  --background-buttons-color: #f4f4fd;
+  --buttons-color: #4d5ae5;
+  --logo-color: #4d5ae5;
+  --logo-word-header-color: #2e2f42;
+  --logo-word-footer-color: #f4f4fd;
 }
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+.address {
+  font-style: normal;
 }
 .visually-hiddden {
   position: absolute;
@@ -22,82 +36,40 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  color: #2e2f42;
+  color: var(--main-color);
+  background-color: var(--hero-title-color);
+  font-size: 16px;
 }
 .menu-link {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  color: var(--main-color);
 }
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
 }
 .logo {
-  width: 44px;
-  height: 24px;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  width: 71px;
-  height: 24px;
+  color: var(--logo-color);
 }
 .logo-word-header {
-  width: 71px;
-  height: 24px;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #2e2f42;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  color: var(--main-color);
 }
 .logo-word-of-footer {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #f4f4fd;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  color: var(--logo-word-footer-color);
 }
 .contact-mail,
 .contact-phone {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--secondary-color);
 }
 .contact-mail:hover,
 .contact-mail:focus {
@@ -108,15 +80,14 @@ body {
   color: var(--accent-color);
 }
 .hero-section {
-  background: #2e2f42;
+  background: var(--main-color);
 }
-.h1-main {
-  font-weight: 700;
+.hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--third-color);
 }
 .modal-btn {
   font-weight: 500;
@@ -125,62 +96,49 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
+  color: var(--third-color);
+  background: var(--buttons-color);
   cursor: pointer;
 }
 .modal-btn:hover,
 .modal-btn:focus {
   background: var(--accent-color);
 }
-.h3 {
+.future-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
-.section-paragraph {
-  font-weight: 400;
-  font-size: 16px;
+.future-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  color: var(--secondary-color);
 }
-.h2 {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.fourth-box {
-  background: #f4f4fd;
+.our-team-section {
+  background: var(--background-secondary-color);
 }
 .footer {
-  background: #2e2f42;
+  background: var(--main-color);
 }
 .section-paragraph-of-footer {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
-
   letter-spacing: 0.02em;
-
-  color: #e7e9fc;
+  color: var(--footer-text-color);
 }
 .all-button,
 .web-site-button,
 .app-button,
 .design-button,
 .marketing-button {
-  background: #f4f4fd;
+  background: var(--background-buttons-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   flex: none;
@@ -193,34 +151,34 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--buttons-color);
   font-family: inherit;
 }
 .all-button:hover,
 .all-button:focus {
   background: var(--accent-color);
-  color: #ffffff;
+  color: var(--third-color);
 }
 .web-site-button:hover,
 .web-site-button:focus {
   background: var(--accent-color);
-  color: #ffffff;
+  color: var(--third-color);
 }
 .app-button:hover,
 .app-button:focus {
   background: var(--accent-color);
-  color: #ffffff;
+  color: var(--third-color);
 }
 .design-button:hover,
 .design-button:focus {
   background: var(--accent-color);
-  color: #ffffff;
+  color: var(--third-color);
 }
 .marketing-button:hover,
 .marketing-button:focus {
   background: var(--accent-color);
-  color: #ffffff;
+  color: var(--thirvar(--third-color));
 }
 .list-card {
-  background: #ffffff;
+  background: var(--third-color);
 }
